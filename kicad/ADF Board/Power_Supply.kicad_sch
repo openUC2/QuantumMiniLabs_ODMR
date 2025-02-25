@@ -3500,6 +3500,16 @@
 		)
 		(uuid "cb324343-cf35-4336-8b0d-995a8ee75e31")
 	)
+	(text "5V 470u"
+		(exclude_from_sim no)
+		(at 52.324 41.148 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ce65185a-493a-4d27-b906-680f56a02c13")
+	)
 	(text "3,3V for microwave ICs"
 		(exclude_from_sim no)
 		(at 152.654 95.758 0)

@@ -1191,7 +1191,7 @@
 			)
 		)
 		(instances
-			(project "Handheld"
+			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f"
 					(page "7")
 				)
@@ -1338,7 +1338,7 @@
 			(uuid "2f59b506-96e4-4579-85e6-a64ce5a47f2b")
 		)
 		(instances
-			(project "Handheld"
+			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f"
 					(page "6")
 				)
@@ -1456,7 +1456,7 @@
 			(uuid "6901c3ff-a96e-4747-9f1a-884a172a6f94")
 		)
 		(instances
-			(project "Handheld"
+			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f"
 					(page "4")
 				)

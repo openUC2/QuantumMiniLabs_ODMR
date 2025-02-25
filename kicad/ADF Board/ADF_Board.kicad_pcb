@@ -3397,7 +3397,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "R10"
-			(at 1.635 -1.25 360)
+			(at 1.635 -1.25 0)
 			(layer "F.SilkS")
 			(uuid "21581114-4813-4d2d-97e7-f7ba7953ff94")
 			(effects
@@ -3408,7 +3408,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "3a69d334-d14d-405d-b181-0b07fa5394b8")
 			(effects
@@ -3563,7 +3563,7 @@
 			(uuid "3ebafc85-4fc0-41cb-87fd-ee2ee1bb6ba1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "6f9e7e12-4c3a-400b-af05-df1e47a221ca")
 			(effects
@@ -4245,7 +4245,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C7"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "fb0f2ebd-3b22-476e-beed-55f66c3f9151")
 			(effects
@@ -4256,7 +4256,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "59693f23-975e-4446-8055-aebad782437f")
 			(effects
@@ -4411,7 +4411,7 @@
 			(uuid "75318650-5726-41c7-bcef-f8b5bd4f969f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "285e2cf9-e2f3-4ebd-81c9-b1252473de77")
 			(effects
@@ -13032,7 +13032,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "R8"
-			(at -2.465 0.12 360)
+			(at -2.465 0.12 0)
 			(layer "F.SilkS")
 			(uuid "86b30f99-c913-48ae-beb2-b8e7b7fca817")
 			(effects
@@ -13043,7 +13043,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "8542210d-659b-4b71-95b6-4be8a64ccecd")
 			(effects
@@ -13198,7 +13198,7 @@
 			(uuid "263b51d5-89dc-4b8a-afef-26f27c78d7cd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "5b5ddf00-41cd-4f6b-a1d6-71979936ed3f")
 			(effects
@@ -30338,7 +30338,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C3"
-			(at 0 -1.68 360)
+			(at 0 -1.68 0)
 			(layer "F.SilkS")
 			(uuid "e7a7b3e5-e728-4e98-93fc-4b575591b255")
 			(effects
@@ -30349,7 +30349,7 @@
 			)
 		)
 		(property "Value" "4.7u"
-			(at 0 1.68 360)
+			(at 0 1.68 0)
 			(layer "F.Fab")
 			(uuid "bfc8e083-2032-423c-bc98-f39043b1c49a")
 			(effects
@@ -30504,7 +30504,7 @@
 			(uuid "7d300f29-3066-47c6-9cc4-7c52c404db4c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "067008bc-4f5d-4c9f-8bfa-daa1b2fe575a")
 			(effects
@@ -31510,7 +31510,7 @@
 		(descr "Hirose U.FL Coaxial https://www.hirose.com/product/en/products/U.FL/U.FL-R-SMT-1%2810%29/")
 		(tags "Hirose U.FL Coaxial")
 		(property "Reference" "J2"
-			(at 0.475 -3.2 360)
+			(at 0.475 -3.2 0)
 			(layer "F.SilkS")
 			(uuid "5b50772e-7e5a-4f67-8f0e-13ccafc15b3d")
 			(effects
@@ -31521,7 +31521,7 @@
 			)
 		)
 		(property "Value" "Conn_Coaxial"
-			(at 0.475 3.2 360)
+			(at 0.475 3.2 0)
 			(layer "F.Fab")
 			(uuid "23ddf85c-62e5-4578-9219-85d67318cde3")
 			(effects
@@ -35708,7 +35708,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP6"
-			(at 0.58 -1.8 360)
+			(at 0.58 -1.8 0)
 			(layer "F.SilkS")
 			(uuid "d88fb751-7600-46c8-b9f2-760305b3aadd")
 			(effects
@@ -35719,7 +35719,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 0 1.9 360)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(uuid "05d3d9f8-c884-4eb2-bb36-7e8e363d3cfe")
 			(effects
@@ -36853,7 +36853,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C6"
-			(at 2.485 0.02 360)
+			(at 2.485 0.02 0)
 			(layer "F.SilkS")
 			(uuid "9b6cd217-d4a1-49bc-abe2-b636756f1e83")
 			(effects
@@ -36864,7 +36864,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "70ef7089-aaeb-4b45-82e2-c5186b4ba33f")
 			(effects
@@ -37019,7 +37019,7 @@
 			(uuid "0ff99f59-e67c-4570-9e17-5d33aa9acd4b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "7cb39d7f-125a-42cd-b395-5c46d5751806")
 			(effects
@@ -39930,6 +39930,18 @@
 		(at 161.7 75 0)
 		(layer "F.SilkS")
 		(uuid "fd7ebb3c-e33d-41be-8864-fb3a244bf5aa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "TODO:\nUpdate netclass width for updated HF width, and check DRC"
+		(at 126.8 39.34 0)
+		(layer "Cmts.User")
+		(uuid "e7162c93-c12a-4637-9549-8d4732ab4b22")
 		(effects
 			(font
 				(size 1 1)
@@ -49272,7 +49284,7 @@
 		)
 		(polygon
 			(pts
-				(xy 212.9 89) (xy 214.9 87) (xy 216 87) (xy 216 95) (xy 216 95) (xy 212.9 95)
+				(xy 212.9 89) (xy 214.9 87) (xy 216 87) (xy 216 95) (xy 212.9 95)
 			)
 		)
 		(filled_polygon
