@@ -1,0 +1,123 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP ADF4351BCPZ
+D Wideband Synthesizer with Integrated VCO
+K
+F http://componentsearchengine.com/Datasheets/3/ADF4351BCPZ.pdf
+$ENDCMP
+#
+$CMP LTC5589IUF#PBF
+D Modulator / Demodulator 700MHz - 6GHz Low-Power I/Q Modulator
+K
+F https://componentsearchengine.com/Datasheets/1/LTC5589IUF#PBF.pdf
+$ENDCMP
+#
+$CMP TG2520SMN_30.000M-MCGNNM0
+D TCXO Oscillators TCXO 30 MHz, 2.8V 3.3V 0.5PPM -40 85C NON O/E 1K TR
+K
+F https://support.epson.biz/td/api/doc_check.php?dl=brief_TG2520SMN&lang=en
+$ENDCMP
+#
+$CMP YAT-12A+
+D Attenuators 12 dB SMT Fixed Attenuator, DC - 18000 MHz, 50ohm
+K
+F https://www.minicircuits.com/WebStore/dashboardPdf?model=YAT-12A%2B
+$ENDCMP
+#
+$CMP PAT1220-C-3DB-T5
+D Attenuators 3dB 50ohm
+K
+F 
+$ENDCMP
+#
+$CMP AD630ARZ
+D AD630ARZ, Modulator/Demodulator Balanced 20-Pin SOIC W
+K
+F https://componentsearchengine.com/Datasheets/2/AD630ARZ.pdf
+$ENDCMP
+#
+$CMP OPA4141AIPW
+D Texas Instruments OPA4141AIPW, Quad JFET Op Amp, 10MHz Rail-Rail, 4.5  36 V, 14-Pin TSSOP
+K
+F http://www.ti.com/lit/gpn/opa4141
+$ENDCMP
+#
+$CMP TLV172IDR
+D 36-V, Single-Supply, 10-MHz, Rail-to-Rail Output, Operational Amplifier.
+K
+F http://www.ti.com/lit/gpn/tlv172
+$ENDCMP
+#
+$CMP NCV2931AST-5T3G
+D LDO Regulator Pos 5V 0.1A Automotive 4-Pin(3+Tab) SOT-223 T/R
+K
+F 
+$ENDCMP
+#
+$CMP MIC5271-5.0YM5-TR
+D LDO Voltage Regulators 100mA Negative uCap LDO Regulator with Enable
+K
+F http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579872
+$ENDCMP
+#
+$CMP NCV4276CDS33R4G
+D LDO Voltage Regulators 3.3V/400MA LDO
+K
+F https://www.onsemi.com/pdf/datasheet/ncv4276c-d.pdf
+$ENDCMP
+#
+$CMP STM32G491KEU6
+D MCU 32-bit ARM Cortex M4 RISC 512KB Flash 1.8V/2.5V/3.3V 32-Pin UFQFPN EP Tray
+K
+F https://www.st.com/resource/en/datasheet/stm32g491ke.pdf
+$ENDCMP
+#
+$CMP TL720M05QKVURQ1
+D Automotive single output LDO, 700-mA, fixed (5-V), 45-V LoadDump protection
+K
+F http://www.ti.com/lit/gpn/tl720m05-q1
+$ENDCMP
+#
+$CMP BA05CC0WFP-E2
+D ROHM BA05CC0WFP-E2, LDO Regulator, 1A, 5 V, +/-1% 5-Pin, DPAK
+K
+F http://rohmfs.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/baxxdd0-e.pdf
+$ENDCMP
+#
+$CMP AWSCR-8.00CELA-C10-T3
+D Resonators 8MHz 10pF AEC -40C +125C
+K
+F 
+$ENDCMP
+#
+$CMP LT3015EDD-5#PBF
+D LDO Voltage Regulators 1.5A, Low Noise, Negative Linear Regulator with Precision Current Limit
+K
+F https://www.arrow.com/en/products/lt3015edd-5pbf/analog-devices?region=nac
+$ENDCMP
+#
+$CMP PD3S220L-7
+D Schottky Diodes & Rectifiers 2.0A 20V
+K
+F https://www.diodes.com/assets/Datasheets/ds31733.pdf
+$ENDCMP
+#
+$CMP CPH3910-TL-E
+D JFET NCH J-FET
+K
+F https://componentsearchengine.com/Datasheets/2/CPH3910-TL-E.pdf
+$ENDCMP
+#
+$CMP NCP718AMT250TBG
+D LDO Voltage Regulators 300 mA LOW IQ 2.5V
+K
+F https://www.onsemi.com/pdf/datasheet/ncp718-d.pdf
+$ENDCMP
+#
+#End Doc Library
