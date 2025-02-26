@@ -696,12 +696,18 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "LCSC",
+          "name": "LCSC",
           "show": true
         },
         {
@@ -733,12 +739,6 @@
           "label": "Height",
           "name": "Height",
           "show": false
-        },
-        {
-          "group_by": true,
-          "label": "LCSC",
-          "name": "LCSC",
-          "show": true
         },
         {
           "group_by": false,
@@ -774,8 +774,8 @@
       "filter_string": "",
       "group_symbols": true,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {
