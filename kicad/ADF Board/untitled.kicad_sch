@@ -3042,28 +3042,6 @@
 			)
 		)
 	)
-	(hierarchical_label "IQ_CS"
-		(shape input)
-		(at 115.57 22.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0b387952-486f-4d47-9368-f90ba4dfd6e4")
-	)
-	(hierarchical_label "Switch1_TTL"
-		(shape input)
-		(at 115.57 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2280e102-1664-474e-94a5-244b48cee0bb")
-	)
 	(hierarchical_label "PLL_LD"
 		(shape input)
 		(at 115.57 30.48 180)
