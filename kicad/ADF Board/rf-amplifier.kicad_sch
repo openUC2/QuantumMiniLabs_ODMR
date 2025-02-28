@@ -709,7 +709,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 114.3) (xy 167.64 114.3)
+			(xy 173.99 114.3) (xy 186.69 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39fd5ca2-c4dc-437e-a8d1-90ea5cc39e17")
+	)
+	(wire
+		(pts
+			(xy 152.4 114.3) (xy 166.37 114.3)
 		)
 		(stroke
 			(width 0)
@@ -736,16 +746,6 @@
 			(type default)
 		)
 		(uuid "767dc297-e859-4b42-913f-698dcac35532")
-	)
-	(wire
-		(pts
-			(xy 186.69 114.3) (xy 175.26 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c951f84-07f1-4d05-9c8f-6cba3f2848cb")
 	)
 	(wire
 		(pts
@@ -840,7 +840,7 @@
 		)
 		(uuid "952642ac-a130-4ff4-a889-8dbc3243ff15")
 	)
-	(text "Output DC-blocking cap:\nvalue from amp datasheet example.\nvalue determined by frequency\nGRF2012 reference amp and old design says 1n.\nlower means lower high-pass filter"
+	(text "Output DC-blocking cap:\nIs high-pass filter.\nHigher capacitance means lower HPF cutoff.\nImpedance is also a factor.\nUse online DC blocking capacitor calculator.\nWas at 1 nF - cutoff 3MHz\nnow 10 pF - cutoff 318MHz"
 		(exclude_from_sim no)
 		(at 165.608 124.46 0)
 		(effects
@@ -1076,92 +1076,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 171.45 114.3 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "94d8d7a4-34b3-40c4-ba43-b08f0f3961fa")
-		(property "Reference" "C305"
-			(at 171.45 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 171.45 109.22 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 175.26 113.3348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 171.45 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 171.45 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 171.45 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 171.45 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fcc28355-5e47-4d32-ae85-aee0fd447a9a")
-		)
-		(pin "1"
-			(uuid "1a040900-bba6-4063-8f85-a297b2aa272d")
-		)
-		(instances
-			(project "ADF_Board"
-				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
-					(reference "C305")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 156.21 59.69 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1327,6 +1241,92 @@
 			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
 					(reference "C304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 170.18 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b41a76c2-d58d-4a22-98e9-5605c9d530fa")
+		(property "Reference" "C501"
+			(at 170.18 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10p/C0G/50V"
+			(at 170.18 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 173.99 113.3348 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.de/ProductDetail/81-GCQ1555C1H100GB1D"
+			(at 170.18 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 170.18 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 170.18 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C32949"
+			(at 170.18 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "173f65d3-415c-4c23-aa2c-3ce5f081d724")
+		)
+		(pin "2"
+			(uuid "32700aa0-c8e1-481b-95d6-e0a9d78b92b3")
+		)
+		(instances
+			(project "ADF_Board"
+				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
+					(reference "C501")
 					(unit 1)
 				)
 			)
