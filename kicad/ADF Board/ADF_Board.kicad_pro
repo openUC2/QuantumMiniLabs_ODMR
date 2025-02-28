@@ -569,6 +569,11 @@
       "/ESP Module/PLL_LD": "Data",
       "/ESP Module/PLL_MuxOut": "Data",
       "/ESP Module/Switch1_TTL": "Data",
+      "/ESP-module/CS_PLL": "Data",
+      "/ESP-module/PLL_LD": "Data",
+      "/ESP-module/PLL_MuxOut": "Data",
+      "/ESP-module/SCK": "Data",
+      "/ESP-module/SDO": "Data",
       "/MW_Source/BBMI": "HF",
       "/MW_Source/BBMQ": "HF",
       "/MW_Source/BBPI": "HF",
@@ -583,12 +588,14 @@
       "/MW_Source/PLL_VTune": "HF",
       "/MW_Source/RF_High_Out": "HF",
       "/MW_Source/Switch1_Out": "HF",
+      "/rf-amplifier/RF_High_Out": "HF",
       "GND": "PWR",
       "I2C_SCL": "Data",
       "I2C_SDA": "Data",
       "Net-(C103-Pad1)": "HF",
       "Net-(C110-Pad1)": "PWR",
       "Net-(C115-Pad1)": "HF",
+      "Net-(C305-Pad1)": "HF",
       "Net-(C50-Pad2)": "HF",
       "Net-(C80-Pad2)": "HF",
       "Net-(C83-Pad1)": "Data",
@@ -774,8 +781,8 @@
       "filter_string": "",
       "group_symbols": true,
       "name": "",
-      "sort_asc": false,
-      "sort_field": "Value"
+      "sort_asc": true,
+      "sort_field": "LCSC"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -832,16 +839,20 @@
       "Root"
     ],
     [
+      "231aed12-61f6-4ebe-919d-1b056d963af2",
+      "Power_Supply"
+    ],
+    [
       "fe8c7f16-9b87-41a0-8c4b-710687e555bc",
-      "ESP Module"
+      "ESP-module"
     ],
     [
       "5112418a-cdf2-4bdb-8243-96a9914896b4",
       "MW_Source"
     ],
     [
-      "231aed12-61f6-4ebe-919d-1b056d963af2",
-      "Power_Supply"
+      "78fcb7e7-6514-4900-8f80-7336779dfb8e",
+      "rf-amplifier"
     ]
   ],
   "text_variables": {}
