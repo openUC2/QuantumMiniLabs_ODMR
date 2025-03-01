@@ -1,15 +1,19 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "4175dbaf-f120-43b5-b05f-0962d8dc3a56")
 	(paper "A4")
 	(lib_symbols
 		(symbol "+5V_1"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -81,7 +85,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -93,7 +97,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -124,9 +128,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -199,7 +206,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -211,7 +218,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -260,11 +267,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:L"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -331,32 +343,8 @@
 			)
 			(symbol "L_0_1"
 				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
+					(start 0 2.54)
+					(mid 0.6323 1.905)
 					(end 0 1.27)
 					(stroke
 						(width 0)
@@ -368,8 +356,32 @@
 				)
 				(arc
 					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -417,12 +429,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "GND_1"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -513,6 +530,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "RF_Amplifier:ADL5610"
 			(exclude_from_sim no)
@@ -649,7 +667,84 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "target 1.2nF"
+		(exclude_from_sim no)
+		(at 160.782 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "13722b53-fe96-4e8d-b937-1806ac7888ee")
+	)
+	(text "470nH@10MHz\nRMS 500mA\nDCR 0.45R\nSRF 555MHz"
+		(exclude_from_sim no)
+		(at 169.418 90.424 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "276c98f2-134b-49f8-80c8-33dd88d05608")
+	)
+	(text "Input DC-blocking cap required:\nis at PLL output balun and\ncapacitance is determined by freq.\nDatasheet example is 100nF (big!)"
+		(exclude_from_sim no)
+		(at 82.804 102.108 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3cf790f3-a458-4387-b4cc-f582a1ddfa95")
+	)
+	(text "Gain Stage +20dB"
+		(exclude_from_sim no)
+		(at 108.204 72.39 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "952642ac-a130-4ff4-a889-8dbc3243ff15")
+	)
+	(text "Output DC-blocking cap:\nIs high-pass filter.\nHigher capacitance means lower HPF cutoff.\nImpedance is also a factor.\nUse online DC blocking capacitor calculator.\nWas at 1 nF - cutoff 3MHz\nnow 10 pF - cutoff 318MHz"
+		(exclude_from_sim no)
+		(at 165.608 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cbd1eef3-a89a-41d0-b64c-2ba19017ffd1")
+	)
+	(text "Using a wire-wound inductor way above its SRF (540MHz)\nso that it filters out GHz with low DCR!"
+		(exclude_from_sim no)
+		(at 167.132 97.028 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e539dde6-919c-4a3c-9d8a-1890a47a75b3")
+	)
+	(text "20dB gain block\n50-4000MHz\n5V, 106 mA max.\nI/O Z matched to 50R"
+		(exclude_from_sim no)
+		(at 123.952 95.758 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eb244d52-6e00-4a7a-9048-26a84c41cab2")
 	)
 	(junction
 		(at 152.4 87.63)
@@ -796,82 +891,6 @@
 			(type default)
 		)
 		(uuid "d98c7ca6-ccb2-4b8c-a6e3-afc92771aaaa")
-	)
-	(text "target 1.2nF"
-		(exclude_from_sim no)
-		(at 160.782 72.39 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "13722b53-fe96-4e8d-b937-1806ac7888ee")
-	)
-	(text "470nH@10MHz\nRMS 500mA\nDCR 0.45R\nSRF 555MHz"
-		(exclude_from_sim no)
-		(at 169.418 90.424 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "276c98f2-134b-49f8-80c8-33dd88d05608")
-	)
-	(text "Input DC-blocking cap required:\nis at PLL output balun and\ncapacitance is determined by freq.\nDatasheet example is 100nF (big!)"
-		(exclude_from_sim no)
-		(at 82.804 102.108 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3cf790f3-a458-4387-b4cc-f582a1ddfa95")
-	)
-	(text "Gain Stage +20dB"
-		(exclude_from_sim no)
-		(at 108.204 72.39 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-			)
-		)
-		(uuid "952642ac-a130-4ff4-a889-8dbc3243ff15")
-	)
-	(text "Output DC-blocking cap:\nIs high-pass filter.\nHigher capacitance means lower HPF cutoff.\nImpedance is also a factor.\nUse online DC blocking capacitor calculator.\nWas at 1 nF - cutoff 3MHz\nnow 10 pF - cutoff 318MHz"
-		(exclude_from_sim no)
-		(at 165.608 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "cbd1eef3-a89a-41d0-b64c-2ba19017ffd1")
-	)
-	(text "Using a wire-wound inductor way above its SRF (540MHz)\nso that it filters out GHz with low DCR!"
-		(exclude_from_sim no)
-		(at 167.132 97.028 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e539dde6-919c-4a3c-9d8a-1890a47a75b3")
-	)
-	(text "20dB gain block\n50-4000MHz\n5V, 106 mA max.\nI/O Z matched to 50R"
-		(exclude_from_sim no)
-		(at 123.952 95.758 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "eb244d52-6e00-4a7a-9048-26a84c41cab2")
 	)
 	(hierarchical_label "RF_High_Out"
 		(shape input)

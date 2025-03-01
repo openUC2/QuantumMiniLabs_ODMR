@@ -1,13 +1,15 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "90b3de2f-c818-48df-8078-fde6a4536a1f")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -36,7 +38,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" " ~"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -73,18 +75,6 @@
 				)
 			)
 			(symbol "Conn_Coaxial_0_1"
-				(arc
-					(start -1.778 -0.508)
-					(mid 0.2311 -1.8066)
-					(end 1.778 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -2.54 0) (xy -0.508 0)
@@ -97,12 +87,24 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.778)
-					)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
 					(stroke
-						(width 0)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -120,12 +122,12 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 1.778 0)
-					(mid 0.2099 1.8101)
-					(end -1.778 0.508)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -171,12 +173,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "GND_1"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -267,11 +274,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
@@ -369,6 +381,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -448,7 +461,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -465,7 +479,41 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "HF netclass traces need impedance matching to 50 Ohm!\nUse JLC impedance calculator with controlled stackup to determine trace width.\nSingle Ended Non Coplanar"
+		(exclude_from_sim no)
+		(at 109.474 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "19963088-20e9-468d-9215-27a0f821ea5d")
+	)
+	(text "Power netclass is not reliably conserved/used"
+		(exclude_from_sim no)
+		(at 108.966 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9d9c4030-5e4e-4d4d-9bf3-5c382c0d2dd6")
+	)
+	(text "Use for frequency generation \nmin 1.6 GHz, max 3.6 GHz.\nLimits set by LC Balun at PLL output."
+		(exclude_from_sim no)
+		(at 112.776 78.232 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b3173fd7-1d07-4d4b-b5b2-c6ac28442611")
 	)
 	(junction
 		(at 63.5 107.95)
@@ -698,39 +746,6 @@
 			(type default)
 		)
 		(uuid "e5c83037-eeaf-487f-a79e-3213d43d2872")
-	)
-	(text "HF netclass traces need impedance matching to 50 Ohm!\nUse JLC impedance calculator with controlled stackup to determine trace width.\nSingle Ended Non Coplanar"
-		(exclude_from_sim no)
-		(at 109.474 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "19963088-20e9-468d-9215-27a0f821ea5d")
-	)
-	(text "Power netclass is not reliably conserved/used"
-		(exclude_from_sim no)
-		(at 108.966 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9d9c4030-5e4e-4d4d-9bf3-5c382c0d2dd6")
-	)
-	(text "Use for frequency generation \nmin 1.6 GHz, max 3.6 GHz.\nLimits set by LC Balun at PLL output."
-		(exclude_from_sim no)
-		(at 112.776 78.232 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b3173fd7-1d07-4d4b-b5b2-c6ac28442611")
 	)
 	(netclass_flag ""
 		(length 2.54)
@@ -1306,6 +1321,10 @@
 	(sheet
 		(at 19.05 104.14)
 		(size 31.75 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1344,6 +1363,10 @@
 	(sheet
 		(at 111.76 33.02)
 		(size 49.53 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1373,63 +1396,63 @@
 		)
 		(pin "SDI" output
 			(at 111.76 46.99 180)
+			(uuid "d5333a5f-f22d-4675-8346-e60cc1f9d886")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d5333a5f-f22d-4675-8346-e60cc1f9d886")
 		)
 		(pin "PLL_CS" output
 			(at 111.76 54.61 180)
+			(uuid "05f186aa-da6c-408a-97c7-97bbbae88637")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "05f186aa-da6c-408a-97c7-97bbbae88637")
 		)
 		(pin "PLL_LD" output
 			(at 111.76 44.45 180)
+			(uuid "0ac673fe-f73c-476b-9afe-d212fcf11bf4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0ac673fe-f73c-476b-9afe-d212fcf11bf4")
 		)
 		(pin "PLL_MuxOut" output
 			(at 111.76 41.91 180)
+			(uuid "2f59b506-96e4-4579-85e6-a64ce5a47f2b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2f59b506-96e4-4579-85e6-a64ce5a47f2b")
 		)
 		(pin "SCK" output
 			(at 111.76 52.07 180)
+			(uuid "35b4e40a-a6bf-495a-8ff0-48d63e132fb8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "35b4e40a-a6bf-495a-8ff0-48d63e132fb8")
 		)
 		(pin "PLL_Out" input
 			(at 161.29 45.72 0)
+			(uuid "54f20b6d-a215-45cc-9cff-757603f0b07b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "54f20b6d-a215-45cc-9cff-757603f0b07b")
 		)
 		(instances
 			(project "ADF_Board"
@@ -1442,6 +1465,10 @@
 	(sheet
 		(at 175.26 39.37)
 		(size 49.53 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1471,23 +1498,23 @@
 		)
 		(pin "RF_High_Out" input
 			(at 224.79 45.72 0)
+			(uuid "864933e0-930e-44a5-855c-74135d02a7e9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "864933e0-930e-44a5-855c-74135d02a7e9")
 		)
 		(pin "dc-blocked-rf-input" input
 			(at 175.26 45.72 180)
+			(uuid "dd94365c-1057-4bd9-bb4f-7a98e64fa9a8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "dd94365c-1057-4bd9-bb4f-7a98e64fa9a8")
 		)
 		(instances
 			(project "ADF_Board"
@@ -1500,6 +1527,10 @@
 	(sheet
 		(at 26.67 19.685)
 		(size 29.21 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1529,63 +1560,63 @@
 		)
 		(pin "CS_PLL" input
 			(at 55.88 44.45 0)
+			(uuid "ce9cd8a8-8c8e-41dd-b1b6-3ae07fa729ef")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ce9cd8a8-8c8e-41dd-b1b6-3ae07fa729ef")
 		)
 		(pin "SDO" input
 			(at 55.88 36.83 0)
+			(uuid "b6d9d70b-733b-4f41-ae4f-71de927689bc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b6d9d70b-733b-4f41-ae4f-71de927689bc")
 		)
 		(pin "SCK" input
 			(at 55.88 41.91 0)
+			(uuid "ca747a1b-b3aa-4dab-ac98-316e1a958648")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ca747a1b-b3aa-4dab-ac98-316e1a958648")
 		)
 		(pin "PLL_MuxOut" input
 			(at 55.88 31.75 0)
+			(uuid "4c5d0abd-b0eb-4f29-bc0f-dc681544747f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4c5d0abd-b0eb-4f29-bc0f-dc681544747f")
 		)
 		(pin "PLL_LD" input
 			(at 55.88 34.29 0)
+			(uuid "191981d3-58f7-4b08-9002-5cdaf249bd0c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "191981d3-58f7-4b08-9002-5cdaf249bd0c")
 		)
 		(pin "SDI" input
 			(at 55.88 39.37 0)
+			(uuid "8fe0be03-3a02-4621-8424-6906bdacb9eb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8fe0be03-3a02-4621-8424-6906bdacb9eb")
 		)
 		(instances
 			(project "ADF_Board"
@@ -1600,4 +1631,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
