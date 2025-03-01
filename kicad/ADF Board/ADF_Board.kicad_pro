@@ -70,16 +70,19 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -90,9 +93,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
@@ -107,7 +112,9 @@
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -122,6 +129,7 @@
         "min_clearance": 0.09,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.0,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.45,
         "min_microvia_diameter": 0.2,
@@ -141,10 +149,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -227,6 +236,7 @@
       "mfg": "",
       "mpn": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
@@ -451,7 +461,7 @@
   },
   "meta": {
     "filename": "ADF_Board.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -466,6 +476,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -483,6 +494,7 @@
         "microvia_drill": 0.1,
         "name": "Data",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgb(255, 179, 25)",
         "track_width": 0.1565,
         "via_diameter": 0.6,
@@ -500,6 +512,7 @@
         "microvia_drill": 0.1,
         "name": "HF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
         "schematic_color": "rgb(110, 82, 255)",
         "track_width": 0.3493,
         "via_diameter": 0.6,
@@ -517,6 +530,7 @@
         "microvia_drill": 0.1,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
         "schematic_color": "rgb(255, 8, 0)",
         "track_width": 0.3,
         "via_diameter": 0.6,
@@ -534,6 +548,7 @@
         "microvia_drill": 0.1,
         "name": "PWR3.3",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
         "schematic_color": "rgb(255, 0, 3)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -551,6 +566,7 @@
         "microvia_drill": 0.1,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.228854,
         "via_diameter": 0.8,
@@ -559,91 +575,253 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": {
-      "+3.3V": "PWR3.3",
-      "+5V": "PWR",
-      "-5V": "PWR",
-      "/ESP Module/PLL_LD": "Data",
-      "/ESP Module/PLL_MuxOut": "Data",
-      "/ESP Module/Switch1_TTL": "Data",
-      "/ESP-module/CS_PLL": "Data",
-      "/ESP-module/PLL_LD": "Data",
-      "/ESP-module/PLL_MuxOut": "Data",
-      "/ESP-module/SCK": "Data",
-      "/ESP-module/SDO": "Data",
-      "/MW_Source/BBMI": "HF",
-      "/MW_Source/BBMQ": "HF",
-      "/MW_Source/BBPI": "HF",
-      "/MW_Source/BBPQ": "HF",
-      "/MW_Source/IQ_CSB": "Data",
-      "/MW_Source/IQ_Out": "HF",
-      "/MW_Source/IQ_SCLK": "Data",
-      "/MW_Source/IQ_SDI": "Data",
-      "/MW_Source/IQ_SDO": "Data",
-      "/MW_Source/PLL_LE": "Data",
-      "/MW_Source/PLL_Out": "HF",
-      "/MW_Source/PLL_VTune": "HF",
-      "/MW_Source/RF_High_Out": "HF",
-      "/MW_Source/Switch1_Out": "HF",
-      "/rf-amplifier/RF_High_Out": "HF",
-      "GND": "PWR",
-      "I2C_SCL": "Data",
-      "I2C_SDA": "Data",
-      "Net-(C103-Pad1)": "HF",
-      "Net-(C110-Pad1)": "PWR",
-      "Net-(C115-Pad1)": "HF",
-      "Net-(C50-Pad2)": "HF",
-      "Net-(C501-Pad1)": "HF",
-      "Net-(C80-Pad2)": "HF",
-      "Net-(C83-Pad1)": "Data",
-      "Net-(D1-DOUT)": "Data",
-      "Net-(D1-VDD)": "PWR",
-      "Net-(D12-K)": "PWR",
-      "Net-(D4-A)": "Data",
-      "Net-(D6-K)": "PWR",
-      "Net-(D7-A)": "PWR",
-      "Net-(IC1-CAP+)": "PWR",
-      "Net-(IC1-CAP-)": "PWR",
-      "Net-(IC1-FB{slash}SD)": "PWR",
-      "Net-(IC1-VREF)": "PWR",
-      "Net-(IC3-CPOUT)": "HF",
-      "Net-(IC3-DATA)": "Data",
-      "Net-(IC3-REFIN)": "HF",
-      "Net-(IC3-RFOUTA+)": "HF",
-      "Net-(IC3-RFOUTA-)": "HF",
-      "Net-(IC3-SW)": "HF",
-      "Net-(IC4-LOC)": "HF",
-      "Net-(IC4-LOL)": "HF",
-      "Net-(IC4-RF)": "HF",
-      "Net-(IC4-SDO)": "Data",
-      "Net-(IC4-TTCK)": "Data",
-      "Net-(IC4-VCC)": "PWR",
-      "Net-(IC4-VCTRL)": "Data",
-      "Net-(J11-In)": "HF",
-      "Net-(J2-In)": "HF",
-      "Net-(JP11-A)": "Data",
-      "Net-(JP2-A)": "Data",
-      "Net-(JP3-A)": "Data",
-      "Net-(JP4-A)": "HF",
-      "Net-(JP5-A)": "HF",
-      "Net-(R10-Pad1)": "HF",
-      "Net-(R45-Pad2)": "HF",
-      "Net-(R77-Pad2)": "Data",
-      "Net-(R8-Pad2)": "HF",
-      "Net-(R89-Pad2)": "PWR",
-      "Net-(U12-EN)": "PWR",
-      "Net-(U12-IN)": "HF",
-      "Net-(U8-RF-OUT1)": "HF",
-      "Net-(U8-RF-OUT2)": "HF",
-      "Net-(U8-TTL_IN)": "HF",
-      "Net-(U9-EN)": "PWR",
-      "Net-(Y2-OUT)": "HF",
-      "Net-(Y2-VCC)": "HF",
-      "VDD": "PWR",
-      "neopixel": "Data"
+      "+3.3V": [
+        "PWR3.3"
+      ],
+      "+5V": [
+        "PWR"
+      ],
+      "-5V": [
+        "PWR"
+      ],
+      "/ESP Module/PLL_LD": [
+        "Data"
+      ],
+      "/ESP Module/PLL_MuxOut": [
+        "Data"
+      ],
+      "/ESP Module/Switch1_TTL": [
+        "Data"
+      ],
+      "/ESP-module/CS_PLL": [
+        "Data"
+      ],
+      "/ESP-module/PLL_LD": [
+        "Data"
+      ],
+      "/ESP-module/PLL_MuxOut": [
+        "Data"
+      ],
+      "/ESP-module/SCK": [
+        "Data"
+      ],
+      "/ESP-module/SDO": [
+        "Data"
+      ],
+      "/MW_Source/BBMI": [
+        "HF"
+      ],
+      "/MW_Source/BBMQ": [
+        "HF"
+      ],
+      "/MW_Source/BBPI": [
+        "HF"
+      ],
+      "/MW_Source/BBPQ": [
+        "HF"
+      ],
+      "/MW_Source/IQ_CSB": [
+        "Data"
+      ],
+      "/MW_Source/IQ_Out": [
+        "HF"
+      ],
+      "/MW_Source/IQ_SCLK": [
+        "Data"
+      ],
+      "/MW_Source/IQ_SDI": [
+        "Data"
+      ],
+      "/MW_Source/IQ_SDO": [
+        "Data"
+      ],
+      "/MW_Source/PLL_LE": [
+        "Data"
+      ],
+      "/MW_Source/PLL_Out": [
+        "HF"
+      ],
+      "/MW_Source/PLL_VTune": [
+        "HF"
+      ],
+      "/MW_Source/RF_High_Out": [
+        "HF"
+      ],
+      "/MW_Source/Switch1_Out": [
+        "HF"
+      ],
+      "/rf-amplifier/RF_High_Out": [
+        "HF"
+      ],
+      "GND": [
+        "PWR"
+      ],
+      "I2C_SCL": [
+        "Data"
+      ],
+      "I2C_SDA": [
+        "Data"
+      ],
+      "Net-(C103-Pad1)": [
+        "HF"
+      ],
+      "Net-(C110-Pad1)": [
+        "PWR"
+      ],
+      "Net-(C115-Pad1)": [
+        "HF"
+      ],
+      "Net-(C50-Pad2)": [
+        "HF"
+      ],
+      "Net-(C501-Pad1)": [
+        "HF"
+      ],
+      "Net-(C80-Pad2)": [
+        "HF"
+      ],
+      "Net-(C83-Pad1)": [
+        "Data"
+      ],
+      "Net-(D1-DOUT)": [
+        "Data"
+      ],
+      "Net-(D1-VDD)": [
+        "PWR"
+      ],
+      "Net-(D12-K)": [
+        "PWR"
+      ],
+      "Net-(D4-A)": [
+        "Data"
+      ],
+      "Net-(D6-K)": [
+        "PWR"
+      ],
+      "Net-(D7-A)": [
+        "PWR"
+      ],
+      "Net-(IC1-CAP+)": [
+        "PWR"
+      ],
+      "Net-(IC1-CAP-)": [
+        "PWR"
+      ],
+      "Net-(IC1-FB{slash}SD)": [
+        "PWR"
+      ],
+      "Net-(IC1-VREF)": [
+        "PWR"
+      ],
+      "Net-(IC3-CPOUT)": [
+        "HF"
+      ],
+      "Net-(IC3-DATA)": [
+        "Data"
+      ],
+      "Net-(IC3-REFIN)": [
+        "HF"
+      ],
+      "Net-(IC3-RFOUTA+)": [
+        "HF"
+      ],
+      "Net-(IC3-RFOUTA-)": [
+        "HF"
+      ],
+      "Net-(IC3-SW)": [
+        "HF"
+      ],
+      "Net-(IC4-LOC)": [
+        "HF"
+      ],
+      "Net-(IC4-LOL)": [
+        "HF"
+      ],
+      "Net-(IC4-RF)": [
+        "HF"
+      ],
+      "Net-(IC4-SDO)": [
+        "Data"
+      ],
+      "Net-(IC4-TTCK)": [
+        "Data"
+      ],
+      "Net-(IC4-VCC)": [
+        "PWR"
+      ],
+      "Net-(IC4-VCTRL)": [
+        "Data"
+      ],
+      "Net-(J11-In)": [
+        "HF"
+      ],
+      "Net-(J2-In)": [
+        "HF"
+      ],
+      "Net-(JP11-A)": [
+        "Data"
+      ],
+      "Net-(JP2-A)": [
+        "Data"
+      ],
+      "Net-(JP3-A)": [
+        "Data"
+      ],
+      "Net-(JP4-A)": [
+        "HF"
+      ],
+      "Net-(JP5-A)": [
+        "HF"
+      ],
+      "Net-(R10-Pad1)": [
+        "HF"
+      ],
+      "Net-(R45-Pad2)": [
+        "HF"
+      ],
+      "Net-(R77-Pad2)": [
+        "Data"
+      ],
+      "Net-(R8-Pad2)": [
+        "HF"
+      ],
+      "Net-(R89-Pad2)": [
+        "PWR"
+      ],
+      "Net-(U12-EN)": [
+        "PWR"
+      ],
+      "Net-(U12-IN)": [
+        "HF"
+      ],
+      "Net-(U8-RF-OUT1)": [
+        "HF"
+      ],
+      "Net-(U8-RF-OUT2)": [
+        "HF"
+      ],
+      "Net-(U8-TTL_IN)": [
+        "HF"
+      ],
+      "Net-(U9-EN)": [
+        "PWR"
+      ],
+      "Net-(Y2-OUT)": [
+        "HF"
+      ],
+      "Net-(Y2-VCC)": [
+        "HF"
+      ],
+      "VDD": [
+        "PWR"
+      ],
+      "neopixel": [
+        "Data"
+      ]
     },
     "netclass_patterns": [
       {
