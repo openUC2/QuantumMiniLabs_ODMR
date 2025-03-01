@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "4175dbaf-f120-43b5-b05f-0962d8dc3a56")
 	(paper "A4")
+	(title_block
+		(title "QuantumMiniLabs_ODMR::ADF_Board")
+		(date "2025-03-01")
+		(rev "A")
+		(company "openUC2 GmbH")
+		(comment 1 "christiankuttke based on design by Dennis Stiegekötter")
+	)
 	(lib_symbols
 		(symbol "+5V_1"
 			(power)
@@ -948,7 +955,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01eb3e7e-7977-4a7a-b6c7-9fe7df33c0d9")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR0502"
 			(at 160.02 93.98 0)
 			(effects
 				(font
@@ -998,7 +1005,7 @@
 		(instances
 			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
-					(reference "#PWR0302")
+					(reference "#PWR0502")
 					(unit 1)
 				)
 			)
@@ -1014,7 +1021,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1cb69109-d8ae-4a4b-9847-26d34b6ec94a")
-		(property "Reference" "U301"
+		(property "Reference" "U501"
 			(at 129.54 104.14 0)
 			(effects
 				(font
@@ -1087,7 +1094,74 @@
 		(instances
 			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
-					(reference "U301")
+					(reference "U501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 127 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4770648d-fd93-48c4-b8f2-52d1a6dc35ac")
+		(property "Reference" "#PWR0503"
+			(at 127 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28590f55-2537-4717-a0aa-a1b7149eca04")
+		)
+		(instances
+			(project "ADF_Board"
+				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
+					(reference "#PWR0503")
 					(unit 1)
 				)
 			)
@@ -1103,7 +1177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c1971f1-5791-4eba-9aff-2694872f4e43")
-		(property "Reference" "C302"
+		(property "Reference" "C501"
 			(at 156.21 52.07 90)
 			(effects
 				(font
@@ -1173,7 +1247,7 @@
 		(instances
 			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
-					(reference "C302")
+					(reference "C501")
 					(unit 1)
 				)
 			)
@@ -1189,7 +1263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9cf3b542-0562-4194-a56e-16751a579e08")
-		(property "Reference" "C304"
+		(property "Reference" "C503"
 			(at 156.21 80.01 90)
 			(effects
 				(font
@@ -1259,7 +1333,7 @@
 		(instances
 			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
-					(reference "C304")
+					(reference "C503")
 					(unit 1)
 				)
 			)
@@ -1275,7 +1349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b41a76c2-d58d-4a22-98e9-5605c9d530fa")
-		(property "Reference" "C501"
+		(property "Reference" "C504"
 			(at 170.18 106.68 90)
 			(effects
 				(font
@@ -1345,7 +1419,7 @@
 		(instances
 			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
-					(reference "C501")
+					(reference "C504")
 					(unit 1)
 				)
 			)
@@ -1362,7 +1436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b71b1a10-707e-4fde-b062-1850c2d70210")
-		(property "Reference" "#PWR0301"
+		(property "Reference" "#PWR0501"
 			(at 152.4 53.34 0)
 			(effects
 				(font
@@ -1412,7 +1486,7 @@
 		(instances
 			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
-					(reference "#PWR0301")
+					(reference "#PWR0501")
 					(unit 1)
 				)
 			)
@@ -1428,7 +1502,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d400077a-939f-4b6a-9501-b77546748074")
-		(property "Reference" "L301"
+		(property "Reference" "L501"
 			(at 153.67 97.7899 0)
 			(effects
 				(font
@@ -1500,7 +1574,7 @@
 		(instances
 			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
-					(reference "L301")
+					(reference "L501")
 					(unit 1)
 				)
 			)
@@ -1516,7 +1590,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f0fe5610-8ec5-47d7-be38-aad0f85726bb")
-		(property "Reference" "C303"
+		(property "Reference" "C502"
 			(at 156.21 66.04 90)
 			(effects
 				(font
@@ -1586,7 +1660,7 @@
 		(instances
 			(project "ADF_Board"
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f/78fcb7e7-6514-4900-8f80-7336779dfb8e"
-					(reference "C303")
+					(reference "C502")
 					(unit 1)
 				)
 			)

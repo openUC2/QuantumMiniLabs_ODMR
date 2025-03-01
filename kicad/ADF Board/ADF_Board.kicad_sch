@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "90b3de2f-c818-48df-8078-fde6a4536a1f")
 	(paper "A4")
+	(title_block
+		(title "QuantumMiniLabs_ODMR::ADF_Board")
+		(date "2025-03-01")
+		(rev "A")
+		(company "openUC2 GmbH")
+		(comment 1 "christiankuttke based on design by Dennis Stiegekötter")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
@@ -527,12 +534,6 @@
 		(color 0 0 0 0)
 		(uuid "add39e4e-ee00-43ee-b016-fbb7f9882e51")
 	)
-	(junction
-		(at 63.5 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed3bd2ed-5212-4177-ab78-664c94c3d9d1")
-	)
 	(no_connect
 		(at 55.88 39.37)
 		(uuid "6b0dc0f1-5fb0-4b44-ae2d-e735b9134c2f")
@@ -679,7 +680,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 114.3) (xy 63.5 120.65)
+			(xy 63.5 114.3) (xy 63.5 127)
 		)
 		(stroke
 			(width 0)
@@ -696,16 +697,6 @@
 			(type default)
 		)
 		(uuid "a9bbc5d0-7a11-4c98-a733-c19573b94081")
-	)
-	(wire
-		(pts
-			(xy 63.5 120.65) (xy 63.5 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b29ceff7-eb67-45a4-b56f-925c42c2132f")
 	)
 	(wire
 		(pts
@@ -803,7 +794,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "518f66f2-9ec0-4106-bf23-95ee35e6fa9c")
-		(property "Reference" "J3"
+		(property "Reference" "J101"
 			(at 243.84 47.2833 0)
 			(effects
 				(font
@@ -875,7 +866,7 @@
 		(instances
 			(project ""
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f"
-					(reference "J3")
+					(reference "J101")
 					(unit 1)
 				)
 			)
@@ -892,7 +883,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a6948f3-9def-4042-8451-a12931828ed3")
-		(property "Reference" "#PWR0127"
+		(property "Reference" "#PWR0101"
 			(at 63.5 133.35 0)
 			(effects
 				(font
@@ -942,83 +933,7 @@
 		(instances
 			(project ""
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f"
-					(reference "#PWR0127")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 66.04 120.65 270)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "792bcf0d-d1f1-40e2-8cfd-945d7060c248")
-		(property "Reference" "H104"
-			(at 69.85 119.3799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "M3"
-			(at 69.85 121.9199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 66.04 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 66.04 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 66.04 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 66.04 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4e4eb128-9353-41d1-9653-e818f84efe48")
-		)
-		(instances
-			(project "ADF_Board"
-				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f"
-					(reference "H104")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -1028,7 +943,7 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 66.04 114.3 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -1110,7 +1025,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ee2fe4e-0d75-4b0e-8d82-38bb42ecde83")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR0102"
 			(at 241.3 57.15 0)
 			(effects
 				(font
@@ -1160,7 +1075,7 @@
 		(instances
 			(project ""
 				(path "/90b3de2f-c818-48df-8078-fde6a4536a1f"
-					(reference "#PWR0101")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -1170,7 +1085,7 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 66.04 107.95 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
@@ -1246,7 +1161,7 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 66.04 101.6 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)

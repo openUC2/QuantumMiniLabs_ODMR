@@ -57,6 +57,11 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.2,
+          "via_gap": 0.0,
+          "width": 0.2
         }
       ],
       "drc_exclusions": [],
@@ -192,7 +197,13 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.5,
+        2.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -224,6 +235,18 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.25,
+          "drill": 0.15
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false,
@@ -497,7 +520,6 @@
         "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -515,7 +537,6 @@
         "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -533,7 +554,6 @@
         "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -551,7 +571,6 @@
         "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -569,7 +588,6 @@
         "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -595,10 +613,18 @@
       "+5V": [
         "PWR"
       ],
-      "-5V": "PWR",
-      "/ESP Module/PLL_LD": "Data",
-      "/ESP Module/PLL_MuxOut": "Data",
-      "/ESP Module/Switch1_TTL": "Data",
+      "-5V": [
+        "PWR"
+      ],
+      "/ESP Module/PLL_LD": [
+        "Data"
+      ],
+      "/ESP Module/PLL_MuxOut": [
+        "Data"
+      ],
+      "/ESP Module/Switch1_TTL": [
+        "Data"
+      ],
       "/ESP-module/CS_PLL": [
         "Data"
       ],
@@ -614,47 +640,96 @@
       "/ESP-module/SDO": [
         "Data"
       ],
-      "/MW_Source/BBMI": "HF",
-      "/MW_Source/BBMQ": "HF",
-      "/MW_Source/BBPI": "HF",
-      "/MW_Source/BBPQ": "HF",
-      "/MW_Source/IQ_CSB": "Data",
-      "/MW_Source/IQ_Out": "HF",
-      "/MW_Source/IQ_SCLK": "Data",
-      "/MW_Source/IQ_SDI": "Data",
-      "/MW_Source/IQ_SDO": "Data",
-      "/MW_Source/PLL_LE": "Data",
+      "/MW_Source/BBMI": [
+        "HF"
+      ],
+      "/MW_Source/BBMQ": [
+        "HF"
+      ],
+      "/MW_Source/BBPI": [
+        "HF"
+      ],
+      "/MW_Source/BBPQ": [
+        "HF"
+      ],
+      "/MW_Source/IQ_CSB": [
+        "Data"
+      ],
+      "/MW_Source/IQ_Out": [
+        "HF"
+      ],
+      "/MW_Source/IQ_SCLK": [
+        "Data"
+      ],
+      "/MW_Source/IQ_SDI": [
+        "Data"
+      ],
+      "/MW_Source/IQ_SDO": [
+        "Data"
+      ],
+      "/MW_Source/PLL_LE": [
+        "Data"
+      ],
       "/MW_Source/PLL_Out": [
         "HF"
       ],
       "/MW_Source/PLL_VTune": [
         "HF"
       ],
-      "/MW_Source/RF_High_Out": "HF",
-      "/MW_Source/Switch1_Out": "HF",
+      "/MW_Source/RFB+": [
+        "HF"
+      ],
+      "/MW_Source/RFB-": [
+        "HF"
+      ],
+      "/MW_Source/RF_High_Out": [
+        "HF"
+      ],
+      "/MW_Source/Switch1_Out": [
+        "HF"
+      ],
       "/rf-amplifier/RF_High_Out": [
         "HF"
       ],
-      "GND": "PWR",
+      "GND": [
+        "PWR"
+      ],
       "I2C_SCL": [
         "Data"
       ],
       "I2C_SDA": [
         "Data"
       ],
-      "Net-(C103-Pad1)": "HF",
-      "Net-(C110-Pad1)": "PWR",
-      "Net-(C115-Pad1)": "HF",
+      "Net-(C103-Pad1)": [
+        "HF"
+      ],
+      "Net-(C110-Pad1)": [
+        "PWR"
+      ],
+      "Net-(C115-Pad1)": [
+        "HF"
+      ],
+      "Net-(C401-Pad2)": [
+        "HF"
+      ],
+      "Net-(C422-Pad2)": [
+        "HF"
+      ],
       "Net-(C50-Pad2)": [
         "HF"
       ],
       "Net-(C501-Pad1)": [
         "HF"
       ],
+      "Net-(C504-Pad1)": [
+        "HF"
+      ],
       "Net-(C80-Pad2)": [
         "HF"
       ],
-      "Net-(C83-Pad1)": "Data",
+      "Net-(C83-Pad1)": [
+        "Data"
+      ],
       "Net-(D1-DOUT)": [
         "Data"
       ],
@@ -664,13 +739,36 @@
       "Net-(D12-K)": [
         "PWR"
       ],
-      "Net-(D4-A)": "Data",
-      "Net-(D6-K)": "PWR",
-      "Net-(D7-A)": "PWR",
-      "Net-(IC1-CAP+)": "PWR",
-      "Net-(IC1-CAP-)": "PWR",
-      "Net-(IC1-FB{slash}SD)": "PWR",
-      "Net-(IC1-VREF)": "PWR",
+      "Net-(D203-K)": [
+        "PWR"
+      ],
+      "Net-(D307-DOUT)": [
+        "Data"
+      ],
+      "Net-(D307-VDD)": [
+        "PWR"
+      ],
+      "Net-(D4-A)": [
+        "Data"
+      ],
+      "Net-(D6-K)": [
+        "PWR"
+      ],
+      "Net-(D7-A)": [
+        "PWR"
+      ],
+      "Net-(IC1-CAP+)": [
+        "PWR"
+      ],
+      "Net-(IC1-CAP-)": [
+        "PWR"
+      ],
+      "Net-(IC1-FB{slash}SD)": [
+        "PWR"
+      ],
+      "Net-(IC1-VREF)": [
+        "PWR"
+      ],
       "Net-(IC3-CPOUT)": [
         "HF"
       ],
@@ -689,43 +787,120 @@
       "Net-(IC3-SW)": [
         "HF"
       ],
-      "Net-(IC4-LOC)": "HF",
-      "Net-(IC4-LOL)": "HF",
-      "Net-(IC4-RF)": "HF",
-      "Net-(IC4-SDO)": "Data",
-      "Net-(IC4-TTCK)": "Data",
-      "Net-(IC4-VCC)": "PWR",
-      "Net-(IC4-VCTRL)": "Data",
+      "Net-(IC4-LOC)": [
+        "HF"
+      ],
+      "Net-(IC4-LOL)": [
+        "HF"
+      ],
+      "Net-(IC4-RF)": [
+        "HF"
+      ],
+      "Net-(IC4-SDO)": [
+        "Data"
+      ],
+      "Net-(IC4-TTCK)": [
+        "Data"
+      ],
+      "Net-(IC4-VCC)": [
+        "PWR"
+      ],
+      "Net-(IC4-VCTRL)": [
+        "Data"
+      ],
+      "Net-(IC401-CPOUT)": [
+        "HF"
+      ],
+      "Net-(IC401-DATA)": [
+        "Data"
+      ],
+      "Net-(IC401-REFIN)": [
+        "HF"
+      ],
+      "Net-(IC401-RFOUTA+)": [
+        "HF"
+      ],
+      "Net-(IC401-RFOUTA-)": [
+        "HF"
+      ],
+      "Net-(IC401-SW)": [
+        "HF"
+      ],
       "Net-(J11-In)": [
         "HF"
       ],
-      "Net-(J2-In)": "HF",
-      "Net-(JP11-A)": "Data",
+      "Net-(J2-In)": [
+        "HF"
+      ],
+      "Net-(J403-In)": [
+        "HF"
+      ],
+      "Net-(JP11-A)": [
+        "Data"
+      ],
       "Net-(JP2-A)": [
         "Data"
       ],
       "Net-(JP3-A)": [
         "Data"
       ],
-      "Net-(JP4-A)": "HF",
-      "Net-(JP5-A)": "HF",
-      "Net-(R10-Pad1)": "HF",
+      "Net-(JP4-A)": [
+        "HF"
+      ],
+      "Net-(JP5-A)": [
+        "HF"
+      ],
+      "Net-(R10-Pad1)": [
+        "HF"
+      ],
+      "Net-(R302-Pad2)": [
+        "Data"
+      ],
+      "Net-(R303-Pad2)": [
+        "Data"
+      ],
+      "Net-(R402-Pad2)": [
+        "HF"
+      ],
       "Net-(R45-Pad2)": [
         "HF"
       ],
-      "Net-(R77-Pad2)": "Data",
-      "Net-(R8-Pad2)": "HF",
-      "Net-(R89-Pad2)": "PWR",
-      "Net-(U12-EN)": "PWR",
-      "Net-(U12-IN)": "HF",
-      "Net-(U8-RF-OUT1)": "HF",
-      "Net-(U8-RF-OUT2)": "HF",
-      "Net-(U8-TTL_IN)": "HF",
-      "Net-(U9-EN)": "PWR",
+      "Net-(R77-Pad2)": [
+        "Data"
+      ],
+      "Net-(R8-Pad2)": [
+        "HF"
+      ],
+      "Net-(R89-Pad2)": [
+        "PWR"
+      ],
+      "Net-(U12-EN)": [
+        "PWR"
+      ],
+      "Net-(U12-IN)": [
+        "HF"
+      ],
+      "Net-(U8-RF-OUT1)": [
+        "HF"
+      ],
+      "Net-(U8-RF-OUT2)": [
+        "HF"
+      ],
+      "Net-(U8-TTL_IN)": [
+        "HF"
+      ],
+      "Net-(U9-EN)": [
+        "PWR"
+      ],
       "Net-(Y2-OUT)": [
         "HF"
       ],
-      "Net-(Y2-VCC)": "HF",
+      "Net-(Y2-VCC)": [
+        "HF"
+      ],
+      "Net-(Y401-OUT)": [
+        "HF"
+      ],
       "VDD": [
         "PWR"
       ],
@@ -868,7 +1043,7 @@
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": false,
+      "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
       "sort_field": "LCSC"
