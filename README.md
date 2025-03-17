@@ -2,6 +2,10 @@
 
 ODMR quantum experiment development with UC2 system for QuantumMiniLabs
 
+## License
+
+We intend that this repo has __CERN OHL-W 2.0__ license. To do it properly, we probably have to follow this guide: [Guide to the CERN-OHL-W v2](https://ohwr.org/project/cernohl/-/wikis/uploads/c2e5e9d297949b5c2d324a6cbf6adda0/cern_ohl_w_v2_howto.pdf)
+
 ## Overview
 
 We are developing a low-cost, easy-to-manufacture experiment setup to do quantum experiments. The bigger project is [QuantumMiniLabs](https://quantumminilabs.de).
