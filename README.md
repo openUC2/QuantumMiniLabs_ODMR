@@ -2,11 +2,6 @@
 
 ODMR quantum experiment development with UC2 system for QuantumMiniLabs
 
-## TODO
-
-- Ask Dennis Stiegekötter for github name to give repo permission
-- Give repo permissions to other affiliated partners (Münster)
-
 ## Overview
 
 We are developing a low-cost, easy-to-manufacture experiment setup to do quantum experiments. The bigger project is [QuantumMiniLabs](https://quantumminilabs.de).
