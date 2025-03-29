@@ -84,9 +84,17 @@ Inner cooper weight: 0.5 oz
 Surface finish: LeadFree HASL
 Assembly: Economic PCBA, top side only
 
-The picture below shows positioning of most parts on the PCB. Some 3D models are missing.
+![Photo of the front of the board](images/board-photo_front.JPG)
 
-![Screenshot of board in JLCPCB PCBA viewer with all components on front side](images/JLCPCBA-viewer-screenshot.png)
+![Photo of the back of the board](images/board-photo_back.JPG)
+
+On the side of the RF output SMA jack, there are also jacks for STEMMA and STEMMA QT. With a double-ended STEMMA QT cable, the Adafruit TSL2591 light sensor can be connected easily as sensor for the ODMR measurement.
+
+![Photo of the side of the board with SMA and I2C jacks](images/board-photo_jacks.JPG)
+
+It works! The oscilloscope input has to be set to 50 Ohm impedance, and the oscilloscope has to be fast enough.
+
+![RF Output signal of board](images/scope_1.png)
 
 ## Contact
 
