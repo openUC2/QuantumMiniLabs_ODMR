@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "71e7017d-976d-412d-97fd-bd88c08917d4")
 	(paper "A4")
+	(title_block
+		(title "QuantumMiniLabs_ODMR::antenna-with-diamonds")
+		(date "2025-09-22")
+		(rev "A")
+		(company "openUC2 GmbH")
+		(comment 1 "christiankuttke")
+	)
 	(lib_symbols
 		(symbol "Connector:Conn_Coaxial"
 			(pin_names
