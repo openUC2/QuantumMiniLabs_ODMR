@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "QuantumMiniLabs_ODMR::ADF_Board")
-		(date "2025-03-01")
-		(rev "A")
+		(date "2025-12-08")
+		(rev "B")
 		(company "openUC2 GmbH")
 		(comment 1 "christiankuttke based on design by Dennis Stiegekötter")
 	)

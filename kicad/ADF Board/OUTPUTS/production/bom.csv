@@ -49,6 +49,7 @@ R407,0603,1,4.7k,C23162
 R409,0603,1,49.9,C23185
 TP201,TestPoint_Pad_D2.0mm,1,3.3V,
 TP202,TestPoint_Pad_D2.0mm,1,5V,
+TP203,TestPoint_Pad_D2.0mm,1,GND,
 TP301,TestPoint_Pad_D1.0mm,1,neopixel,
 TP302,TestPoint_Pad_D1.0mm,1,neopixel-extend,
 TP303,TestPoint_Pad_D1.0mm,1,USB-5V,
